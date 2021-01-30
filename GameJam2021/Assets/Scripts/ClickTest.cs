@@ -6,10 +6,11 @@ public class ClickTest : MonoBehaviour
 {
     public int mouseInput = -2, mouseSelect;
     private bool glowing = true;
+    public static bool canClick = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canClick = true;
     }
 
     // Update is called once per frame

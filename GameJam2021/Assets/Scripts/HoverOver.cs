@@ -9,7 +9,8 @@ public class HoverOver : MonoBehaviour
     public GameObject objective;
     private bool glowing = true, moving = false, acting = false;
     private Vector2 left, center, right, up;
-    public float distance, benevspeed, evilspeed;
+    public float distance, benevspeed, evilspeed, sizeUp, attackSpeed;
+    public Vector3 sizeIncrease;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,9 @@ public class HoverOver : MonoBehaviour
     
     void OnMouseOver()
     {
-        if(!moving){
+
+        if(good){
+            if(!moving){
             StartCoroutine(BenevolentMove());
             moving = true;
         }
@@ -42,6 +45,20 @@ public class HoverOver : MonoBehaviour
             acting = true;
         }
         //Debug.Log("over");
+        }
+        if(!good){
+            if(!moving){
+            StartCoroutine(EvilMove());
+            moving = true;
+        }
+        if(mouseInput == 1 && !acting){
+            StartCoroutine(AttackPlayer());
+            ClickTest.canClick = false;
+            acting = true;
+        }
+        //Debug.Log("over");
+        }
+        
     }
     IEnumerator BenevolentMove(){
         //rightthanleft
@@ -78,5 +95,36 @@ public class HoverOver : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, center, benevspeed * 3f);
         }
         acting = false;
+    }
+
+    IEnumerator EvilMove(){
+        //left than right
+        while(this.transform.position.x!=left.x){
+            yield return null;
+            transform.position = Vector2.MoveTowards(transform.position, left, evilspeed);
+            if(acting)
+                break;
+
+        }
+        while(this.transform.position.x!=right.x){
+            yield return null;
+            transform.position = Vector2.MoveTowards(transform.position, right, evilspeed);
+            if(acting)
+                break;
+        }
+        while(this.transform.position.x!=center.x){
+            yield return null;
+            transform.position = Vector2.MoveTowards(transform.position, center, evilspeed);
+            if(acting)
+                break;
+        }
+        moving = false;
+    }
+    IEnumerator AttackPlayer(){
+        for(int i =0;i < 140;i++){
+            yield return null;
+            this.transform.localScale+=sizeIncrease;
+        }
+        
     }
 }
