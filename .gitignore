@@ -2,16 +2,16 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+GameJam2021/[Ll]ibrary/
+GameJam2021/[Tt]emp/
+GameJam2021/[Oo]bj/
+GameJam2021/[Bb]uild/
+GameJam2021/[Bb]uilds/
+GameJam2021/[Ll]ogs/
+GameJam2021/[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
-!/[Aa]ssets/**/*.meta
+!GameJam2021/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
