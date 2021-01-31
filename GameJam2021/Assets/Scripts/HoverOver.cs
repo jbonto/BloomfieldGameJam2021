@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HoverOver : MonoBehaviour
 {
-    public int mouseInput = -2, mouseSelect;
+    public int mouseInput = -2, mouseSelect, attackFrames;
     public bool good;
     public GameObject objective;
     private bool glowing = true, moving = false, acting = false;
@@ -17,7 +17,7 @@ public class HoverOver : MonoBehaviour
         left = new Vector2(this.transform.position.x - distance, this.transform.position.y);
         center = new Vector2(this.transform.position.x, this.transform.position.y);
         right =  new Vector2(this.transform.position.x + distance, this.transform.position.y);
-        up = new Vector2(this.transform.position.x, this.transform.position.y + 6f);
+        up = new Vector2(this.transform.position.x, this.transform.position.y + 1.5f);
     }
     void FixedUpdate()
     {
@@ -32,34 +32,42 @@ public class HoverOver : MonoBehaviour
         }
     }
     
-    void OnMouseOver()
+    void OnMouseDown()
     {
-
         if(good){
-            if(!moving){
-            StartCoroutine(BenevolentMove());
-            moving = true;
-        }
-        if(mouseInput == 1 && !acting){
+           
+        if(!acting){
             StartCoroutine(MoveUp());
             acting = true;
         }
         //Debug.Log("over");
         }
         if(!good){
-            if(!moving){
-            StartCoroutine(EvilMove());
-            moving = true;
-        }
-        if(mouseInput == 1 && !acting){
+            
+        if(!acting){
             StartCoroutine(AttackPlayer());
             ClickTest.canClick = false;
             acting = true;
         }
-        //Debug.Log("over");
         }
-        
     }
+
+    void OnMouseOver()
+    {
+        if(good){
+            if(!moving){
+            StartCoroutine(BenevolentMove());
+            moving = true;
+            }
+        }
+        if(!good){
+            if(!moving){
+            StartCoroutine(EvilMove());
+            moving = true;
+            }
+        }
+    }
+
     IEnumerator BenevolentMove(){
         //rightthanleft
         while(this.transform.position.x!=right.x){
@@ -85,13 +93,14 @@ public class HoverOver : MonoBehaviour
     }
 
     IEnumerator MoveUp(){
-        while(this.transform.position.y!= up.y){
+        while(this.transform.position.y < up.y-.3f){
             yield return null;
             transform.position = Vector2.MoveTowards(transform.position, up, benevspeed * 3f);
         }
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1.8f);
         while(this.transform.position.y!= center.y){
             yield return null;
+            
             transform.position = Vector2.MoveTowards(transform.position, center, benevspeed * 3f);
         }
         acting = false;
@@ -99,14 +108,14 @@ public class HoverOver : MonoBehaviour
 
     IEnumerator EvilMove(){
         //left than right
-        while(this.transform.position.x!=left.x){
+        while(this.transform.position.x > left.x + .2f){
             yield return null;
             transform.position = Vector2.MoveTowards(transform.position, left, evilspeed);
             if(acting)
                 break;
 
         }
-        while(this.transform.position.x!=right.x){
+        while(this.transform.position.x < right.x - .2f){
             yield return null;
             transform.position = Vector2.MoveTowards(transform.position, right, evilspeed);
             if(acting)
@@ -121,7 +130,8 @@ public class HoverOver : MonoBehaviour
         moving = false;
     }
     IEnumerator AttackPlayer(){
-        for(int i =0;i < 140;i++){
+        this.GetComponent<SpriteRenderer>().sortingOrder = 20;
+        for(int i =0;i < attackFrames;i++){
             yield return null;
             this.transform.localScale+=sizeIncrease;
         }
