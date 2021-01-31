@@ -6,12 +6,13 @@ public class LightWave : MonoBehaviour
 {
     public UnityEngine.Experimental.Rendering.Universal.Light2D _light;
     public float baseFalloff = 0f, falloffMod, baseF, add;
+    public bool initiallyActive;
     // Start is called before the first frame update
     void Start()
     {
-        _light = this.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
-        
+        _light = this.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>(); 
         StartCoroutine(LightHum());
+        
     }
 
     // Update is called once per frame

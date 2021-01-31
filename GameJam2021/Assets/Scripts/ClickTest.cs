@@ -7,9 +7,13 @@ public class ClickTest : MonoBehaviour
     public int mouseInput = -2, mouseSelect;
     private bool glowing = true;
     public static bool canClick = true;
+    public GameObject[] Enable, Disable;
+    public Transform Location;
+    GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
+        cam = GameObject.FindGameObjectWithTag("MainCamera");
         canClick = true;
     }
 
@@ -30,9 +34,18 @@ public class ClickTest : MonoBehaviour
     void OnMouseOver()
     {
         if(mouseInput == 1 && glowing){
-            Debug.Log("hi");
+            cam.transform.position = Location.position;
+            /**
+            foreach(GameObject i in Enable){
+                i.SetActive(true);
+            }
+            foreach(GameObject i in Disable){
+                i.SetActive(false);
+            }
             glowing=false;
+            */
         }
+        
         //Debug.Log("over");
     }
 }
