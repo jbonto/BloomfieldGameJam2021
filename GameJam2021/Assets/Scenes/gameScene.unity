@@ -131,6 +131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 18455927}
   - component: {fileID: 18455928}
+  - component: {fileID: 18455930}
+  - component: {fileID: 18455929}
   m_Layer: 0
   m_Name: GGJ2021_painting_v1
   m_TagString: Untagged
@@ -202,6 +204,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &18455929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18455926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
+--- !u!61 &18455930
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18455926}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04279518, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7326317, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &47467582
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +263,8 @@ GameObject:
   m_Component:
   - component: {fileID: 47467583}
   - component: {fileID: 47467584}
+  - component: {fileID: 47467586}
+  - component: {fileID: 47467585}
   m_Layer: 0
   m_Name: GGJ2021_chair_v1
   m_TagString: Untagged
@@ -283,6 +336,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &47467585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47467582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
+--- !u!61 &47467586
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47467582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.10334587, y: -0.1550194}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8985863, y: 2.2499611}
+  m_EdgeRadius: 0
 --- !u!1 &57422153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1848,8 @@ GameObject:
   m_Component:
   - component: {fileID: 434529164}
   - component: {fileID: 434529165}
+  - component: {fileID: 434529167}
+  - component: {fileID: 434529166}
   m_Layer: 0
   m_Name: GGJ2021_bookShelf_v1 (2)
   m_TagString: Untagged
@@ -1817,6 +1921,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &434529166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434529163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &434529167
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434529163}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &483942734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,6 +2383,8 @@ GameObject:
   m_Component:
   - component: {fileID: 550322806}
   - component: {fileID: 550322807}
+  - component: {fileID: 550322809}
+  - component: {fileID: 550322808}
   m_Layer: 0
   m_Name: GGJ2021_vase_v1
   m_TagString: Untagged
@@ -2301,6 +2456,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &550322808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550322805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
+--- !u!61 &550322809
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550322805}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &569184201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,6 +3070,8 @@ GameObject:
   m_Component:
   - component: {fileID: 699205212}
   - component: {fileID: 699205213}
+  - component: {fileID: 699205215}
+  - component: {fileID: 699205214}
   m_Layer: 0
   m_Name: GGJ2021_bookShelf_v1
   m_TagString: Untagged
@@ -2937,6 +3143,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &699205214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699205211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.5
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &699205215
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699205211}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &768436379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +3202,8 @@ GameObject:
   m_Component:
   - component: {fileID: 768436380}
   - component: {fileID: 768436381}
+  - component: {fileID: 768436383}
+  - component: {fileID: 768436382}
   m_Layer: 0
   m_Name: GGJ2021_couch_v1 (1)
   m_TagString: Untagged
@@ -3018,6 +3275,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &768436382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768436379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &768436383
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768436379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.5040287}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 1.5519426}
+  m_EdgeRadius: 0
 --- !u!1 &813363676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3366,6 +3672,8 @@ GameObject:
   m_Component:
   - component: {fileID: 992777318}
   - component: {fileID: 992777319}
+  - component: {fileID: 992777321}
+  - component: {fileID: 992777320}
   m_Layer: 0
   m_Name: GGJ2021_couch_v1
   m_TagString: Untagged
@@ -3437,6 +3745,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &992777320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992777317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.8
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &992777321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992777317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.4735124}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 1.6129751}
+  m_EdgeRadius: 0
 --- !u!1 &994032943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,6 +3886,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1005012767}
   - component: {fileID: 1005012768}
+  - component: {fileID: 1005012770}
+  - component: {fileID: 1005012769}
   m_Layer: 0
   m_Name: wallRoom2
   m_TagString: Untagged
@@ -3600,6 +3959,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1005012769
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005012766}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20943737, y: 0.49942803}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 12, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9382, y: 1.2818937}
+  m_EdgeRadius: 0
+--- !u!114 &1005012770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005012766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.8
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
 --- !u!1 &1010979989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,6 +4594,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1272165092}
   - component: {fileID: 1272165093}
+  - component: {fileID: 1272165095}
+  - component: {fileID: 1272165094}
   m_Layer: 0
   m_Name: GGJ2021_bookShelf_v1 (1)
   m_TagString: Untagged
@@ -4257,6 +4667,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1272165094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272165091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.5
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &1272165095
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272165091}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &1308636237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,6 +5335,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1553761058}
   - component: {fileID: 1553761059}
+  - component: {fileID: 1553761061}
+  - component: {fileID: 1553761060}
   m_Layer: 0
   m_Name: GGJ2021_couch_v1 (2)
   m_TagString: Untagged
@@ -4947,6 +5408,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1553761060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553761057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.3
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
+--- !u!61 &1553761061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553761057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.48029774}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 1.5994045}
+  m_EdgeRadius: 0
 --- !u!1 &1654586937
 GameObject:
   m_ObjectHideFlags: 0
@@ -5268,6 +5778,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1753617989}
   - component: {fileID: 1753617990}
+  - component: {fileID: 1753617992}
+  - component: {fileID: 1753617991}
   m_Layer: 0
   m_Name: GGJ2021_vase_v1
   m_TagString: Untagged
@@ -5339,6 +5851,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1753617991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753617988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.4
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &1753617992
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753617988}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &1787895944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,6 +6001,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1836252885}
   - component: {fileID: 1836252886}
+  - component: {fileID: 1836252888}
+  - component: {fileID: 1836252887}
   m_Layer: 0
   m_Name: GGJ2021_painting_v1 (1)
   m_TagString: Untagged
@@ -5511,6 +6074,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1836252887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836252884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.5
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
+--- !u!61 &1836252888
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836252884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.021598816, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7824249, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &1849431015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,6 +6133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1849431016}
   - component: {fileID: 1849431017}
+  - component: {fileID: 1849431019}
+  - component: {fileID: 1849431018}
   m_Layer: 0
   m_Name: GGJ2021_painting_v1
   m_TagString: Untagged
@@ -5592,6 +6206,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1849431018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849431015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.023044586, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.822567, y: 2.56}
+  m_EdgeRadius: 0
+--- !u!114 &1849431019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849431015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 90
+  good: 0
+  objective: {fileID: 0}
+  distance: 0.5
+  benevspeed: 1
+  evilspeed: 0.05
+  sizeUp: 0.1
+  attackSpeed: 0.02
+  sizeIncrease: {x: 0.06, y: 0.06, z: 0.06}
 --- !u!1 &1863970857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,6 +7291,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2068541562}
   - component: {fileID: 2068541563}
+  - component: {fileID: 2068541565}
+  - component: {fileID: 2068541564}
   m_Layer: 0
   m_Name: GGJ2021_vase_v1
   m_TagString: Untagged
@@ -6699,6 +7364,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2068541564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068541561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8aef0864ad77a04fbe0646255d19c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseInput: -2
+  mouseSelect: 0
+  attackFrames: 0
+  good: 1
+  objective: {fileID: 0}
+  distance: 0.3
+  benevspeed: 0.01
+  evilspeed: 0
+  sizeUp: 0
+  attackSpeed: 0
+  sizeIncrease: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!61 &2068541565
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068541561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &2102018337
 GameObject:
   m_ObjectHideFlags: 0

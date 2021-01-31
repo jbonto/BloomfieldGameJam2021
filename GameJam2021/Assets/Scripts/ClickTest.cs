@@ -31,10 +31,17 @@ public class ClickTest : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+    {
+        if(canClick){
+            cam.transform.position = Location.position;
+        }
+    }
+
     void OnMouseOver()
     {
-        if(mouseInput == 1 && glowing){
-            cam.transform.position = Location.position;
+        if(mouseInput == 1 && glowing && canClick){
+            
             /**
             foreach(GameObject i in Enable){
                 i.SetActive(true);
