@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HoverOver : MonoBehaviour
 {
     public int mouseInput = -2, mouseSelect, attackFrames;
@@ -14,10 +14,13 @@ public class HoverOver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        left = new Vector2(this.transform.position.x - distance, this.transform.position.y);
-        center = new Vector2(this.transform.position.x, this.transform.position.y);
-        right =  new Vector2(this.transform.position.x + distance, this.transform.position.y);
-        up = new Vector2(this.transform.position.x, this.transform.position.y + 1.5f);
+        left = new Vector3(this.transform.position.x - distance, this.transform.position.y,25f);
+        center = new Vector3(this.transform.position.x, this.transform.position.y, 25f);
+        right =  new Vector3(this.transform.position.x + distance, this.transform.position.y,25f);
+        up = new Vector3(this.transform.position.x, this.transform.position.y + 1.5f, 25f);
+        if(objective){
+            objective.SetActive(false);
+        }
     }
     void FixedUpdate()
     {
@@ -54,6 +57,7 @@ public class HoverOver : MonoBehaviour
 
     void OnMouseOver()
     {
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 100f);
         if(good){
             if(!moving){
             StartCoroutine(BenevolentMove());
@@ -93,6 +97,9 @@ public class HoverOver : MonoBehaviour
     }
 
     IEnumerator MoveUp(){
+        if(objective){
+            objective.SetActive(true);
+        }
         while(this.transform.position.y < up.y-.3f){
             yield return null;
             transform.position = Vector2.MoveTowards(transform.position, up, benevspeed * 3f);
@@ -102,6 +109,9 @@ public class HoverOver : MonoBehaviour
             yield return null;
             
             transform.position = Vector2.MoveTowards(transform.position, center, benevspeed * 3f);
+        }
+        if(objective){
+            objective.SetActive(false);
         }
         acting = false;
     }
@@ -135,6 +145,6 @@ public class HoverOver : MonoBehaviour
             yield return null;
             this.transform.localScale+=sizeIncrease;
         }
-        
+        SceneManager.LoadScene("gameOverScene");
     }
 }

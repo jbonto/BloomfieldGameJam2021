@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Haunted
+    uniqueID: 2970836009
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 3432706225
+    locked: 0
+  - name: Other
+    uniqueID: 3113183377
     locked: 0
