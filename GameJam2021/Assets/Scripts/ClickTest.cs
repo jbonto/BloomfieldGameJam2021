@@ -29,6 +29,9 @@ public class ClickTest : MonoBehaviour
             glowing = true;
 
         }
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
     }
 
     void OnMouseDown()
